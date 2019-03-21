@@ -1,0 +1,46 @@
+version: '2.1'
+
+networks:
+  iam-net:
+    driver: bridge
+    name: "iam-net"
+
+services:
+  dev:
+    build:
+      context: ../../
+      dockerfile: docker/dev/Dockerfile
+    container_name: 'dev'
+    environment:
+      NEO4J_AUTH: none
+    networks:
+      - iam-net
+    volumes:
+      - /app/node_modules
+      - ../../:/app
+    command:
+      - yarn
+      - start:dev
+    depends_on:
+      graphdb:
+        condition: service_healthy
+    ports:
+      - "50051:50051"
+
+  graphdb:
+    container_name: 'graphdb'
+    image: neo4j:3.5.3
+    networks:
+      - iam-net
+    ports:
+      - "7474:7474"
+      - "7473:7473"
+      - "7687:7687"
+    volumes:
+      - ../../neo4j/dev/data:/data
+      - ../../neo4j/dev/logs:/logs
+    healthcheck:
+      test: ['CMD-SHELL', 'netstat -plnt | grep -ce "7687" > 0 || exit 1']
+      interval: 5s
+      timeout: 10s
+      retries: 5
