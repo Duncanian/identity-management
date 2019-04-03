@@ -6,7 +6,8 @@ spec:
   selector:
     app: iam-server
   ports:
-  - protocol: TCP
+  - name: iam-server-port
+    protocol: TCP
     port: 80
     targetPort: 50051
     # Use LoadBalancer because NodePort gave us TCP Read Failed when a client tries to connect
