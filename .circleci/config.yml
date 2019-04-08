@@ -11,6 +11,18 @@ defaults: &defaults
         ADMINISTRATOR_NAME: Test Admin
         NODE_ENV: test
         GRAPH_DB_CONNECTION_TIMEOUT: 15000
+        DOCKER_USERNAME: shopinc
+        DOCKER_PASSWORD: shopinc-dev-30492
+        DOCKER_REGISTRY: docker.io
+        GCLOUD_SERVICE_KEY: ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAic2hvcC1pbmMtMjMzNzE1IiwKICAicHJpdmF0ZV9rZXlfaWQiOiAiZjNlZTU3ODIzNzViMzJlNzJiYmJhYmVkMWM2ZWQ1MzkwYzM5ZTE2YSIsCiAgInByaXZhdGVfa2V5IjogIi0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZBSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS1l3Z2dTaUFnRUFBb0lCQVFDdXlsbnV4TVV4MHpUS1xuVmcwUXJUS1JwV3YxL0IyQXFFZ05SVWkzQmhUdGg0K1JyWkdFTjljYjh3UUIvVTB5OFEyVVN3bHh4M3l1ZDAvQlxuM3dEYVQ0WWdYUWIvY0lzZWdLN0NOM3Y2SWxCcFlraE4rb0oyeFBsMjJlUjFxbHlDZlpMTm5XM21KeWVtazlsZFxuaGd5dVhoRExVN2lEakFUcGE1cEtvMmVGMFFoSWpGdWRKZUdxWW9MZFhLVElpVFFjc3NkdE4ybHQvK1pTZkE0dFxud0ZuNkc4b05Lb051VUttMi85ZmdrbURLMmxkdGlnVms0WEUrWlE0RzlZbmxsQzRnTkRMSnUwR1kvUW5BT1NuS1xuU1UzRVdZVWxIR2VReVVSbGxxVE93YUFLcTlGUHBIRjBCVGZ1NU11ZDFkT0Q0cUNxQUVBaVBaZVNaMitqeThYMVxuV2RmcTR4WnhBZ01CQUFFQ2dnRUFUYzZpOFFCanZiWEVvcXRpbm9GUzZQWEgxTlRaZHp1eDgwSmJ4NmxyNkg2M1xuWU1Sd2FmaUhoNWdLdVMzK1R3WnlJb2l5bUJVU3dnRTNubGc4WTNJU0JWY1Q5ZUt0OHpLYVdMZGxOMmhOL2xOelxuVjA4RUE0WFVmTjBxNzF3YVdUWTRBdEtwS05KV09yZEhBL1JYc2NrSzFkQWJhMmVKaWpUTmxwc2R5cnBONHlqbFxud3I3M09yTTVaWHZscDZJeWtja2k0U01CNUlOUFdUUVhvVjlSYVIwYjFXYkFIdkI5emdiMHB1NiswWVBML3BQV1xuRzZWMk1jVDR6UWVSK3N0VmVxTkFTd29uWmNTTGVzdTdhVG1mMXdqcHgrNmxzTFgrcTZPUzUyMnZQUWIrbkI4NVxuRG5RTzdJUThrVnBZRkF1RGR5NzU0TWpMQ2NPUmpWVVM3SDg4OEozT1J3S0JnUUR5eUFtYld0dVpWMUc3QzVGYVxuZzZQTURTZ3hFZ1ZCSy9NcTJObjQ2SW90Nyt1Z0cvamNWM3ZxKzJ2SklzOHFXWDQ3U0g1dHlGK0RkZGRQZmp4RFxuaVkxYzZQSWxUUk9EMWZzd3IrYTFkLzlrcTRpaFVlNE1KVk1tOHFqN2NwVm51TDJkNkx3S29Edmg5eXI5b1g0Y1xuZmc5VDJZNHh5aUhaVFRUUzN3TE1pWmJQUndLQmdRQzRUcUozeDF3b3ZNME5SY2xHUVd1QUtFN1VtN3B5b3ZtSlxuQnd3OG56VVJkcURCbm9nY2dKWWJGRkozTkRDRzlDOXBDNkF3d0drMlpXNjBVbERJd2FKcTlia3hiWGtZTW5XTlxuZWh5OFltZnd3ZUZVK1R1d2o0a2ZIN2Rmd0czUXhUSXo2UmxyYmduQ0dkZFRabGZDK1NTRC9EK05TR25hRjNCSlxuNWdrLzNYbjRod0tCZ0ZRUjNQSEZCcUlVMEtKNm9QeTg5TzFsNlBNRkVIaSs1VmVDL0FmclRsNFY1SHZ1ODhBcFxuTXludG9pZG1QR0tuMXNSa21CTWYvYU1pSFVyVHBiNmxWU1JGTGdTb3FnZFBBOHFhUHNPOEo5NE9ZQ09zb1VmblxuYk9IaHlZNDQ0VytuVTFIcEU2U0NVL290Z3QrTkdvUjNTb3Q0bkhxMVNmOWJjdDFLaUVlWHBYZGxBb0dBWS9OWlxuRG1ZU0o1R0VEaitiVUx0bnBoKzE2SHp2bHYybEg5ZXZuaXlrNWV5VWI0d2V1bjVOYVRBVExNd2p5UHdodmZEdFxuRmFNeks2bkVhSXYvZlcvdE9kNDZhWUM1M0JKNVI1bENmak5MdFBnZjBDbzlZWm5sdmZoQVJQQWhYY2VqV3gxOVxuaUpJclBwVXUvZTZSaDQzL2JJaGVtcXI3cEtkellOQWNrZ0wxQTM4Q2dZQnVaSGNhUGcwVXhBbXdUbExsNzRyUFxuWmFkMVhacUk5TndTV3BKNVpSRGhtbS9GN1I1UWF5dzkyR3RsTnRUTFM1aW5DcjU3THZIZ2UycVR1Y0JpbjYxUVxuaS9HYysyT3NBV3F1cjRhOUFGeE1ONHk5dHdma3p2OEhibCt5TWl5QS9kdm54WWtkYTNtMWNObE9uWndjOVhpYVxuSVVLY0grVkdzU1RBRFdVaEFvc0ZNZz09XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLAogICJjbGllbnRfZW1haWwiOiAiNTg2ODczMDY1ODI1LWNvbXB1dGVAZGV2ZWxvcGVyLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTEzNTY0NjM3NjUwNTA1NjMwOTk5IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS81ODY4NzMwNjU4MjUtY29tcHV0ZSU0MGRldmVsb3Blci5nc2VydmljZWFjY291bnQuY29tIgp9Cg==
+        SERVICE_KEY_PATH: key.json
+        PROJECT_ID: shop-inc-233715
+        COMPUTE_ZONE: us-central1-a
+        CLUSTER_NAME: shopinc-cluster
+        GRAPH_DB_SECRETS: YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IGdyYXBoZGItc2VjcmV0cwp0eXBlOiBPcGFxdWUKc3RyaW5nRGF0YToKICBORU80Sl9BVVRIOiBuZW80ai9zaG9waW5j
+        IAM_SERVER_SECRETS: YXBpVmVyc2lvbjogdjEKa2luZDogU2VjcmV0Cm1ldGFkYXRhOgogIG5hbWU6IGlhbS1zZWNyZXRzCnR5cGU6IE9wYXF1ZQpzdHJpbmdEYXRhOgogIE5PREVfRU5WOiBzdGFnaW5nCiAgR1JQQ19UUkFDRTogYWxsCiAgR1JQQ19WRVJCT1NJVFk6IEVSUk9SCiAgR1JBUEhfREJfVVNFUjogbmVvNGoKICBHUkFQSF9EQl9QQVNTV09SRDogc2hvcGluYwogIEFETUlOSVNUUkFUT1JfTkFNRTogU2hvcCBJbmMKICBBRE1JTklTVFJBVE9SX0VNQUlMOiBzaG9wLmluYy5kZXZAZ21haWwuY29tCiAgR09PR0xFX0NMSUVOVF9JRDogNDA3NDA4NzE4MTkyLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tCiAgU0VDUkVUX0tFWTogLU8qJTs6Kz9nW0hIK0dLekpoJDFnJCM3YDVaOCE/aTtrOS4ibCg+Mno5TUh5OChILW93NlNgRzN0OFZ8MF43YQogIE1BSUxHVU5fQVBJX0tFWTogNWUxNGFiZWMwYzZiYWI3ZDViNDI5NDg2OGVhNWFlNTMtN2NhYTk0NzUtODE1YzI5NzMKICBNQUlMR1VOX0RPTUFJTjogc2FuZGJveGJiOWFhOWRkNTEzMDRlNjhiYmU1ZTk4YjIwMmRiZTUzLm1haWxndW4ub3Jn
+        GRAPH_DB_SECRETS_PATH: k8s/graphdb/secrets.yml
+        IAM_SERVER_SECRETS_PATH: k8s/iam-server/secrets.yml
     - image: neo4j:3.5.3
       environment:
         NEO4J_AUTH: none
@@ -57,47 +69,145 @@ jobs:
             - node_modules
       - *persist_to_workspace
 
-  test_and_report:
+  # test_and_report:
+  #   <<: *defaults
+  #   steps:
+  #     - *attach_workspace
+  #     - *install_npm_packages
+  #     - run:
+  #         name: Run identity-management lint test
+  #         command: yarn lint
+  #     - run:
+  #         name: install dockerize
+  #         command: wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && sudo tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+  #         environment:
+  #           DOCKERIZE_VERSION: v0.6.1
+  #     - run:
+  #         name: Wait for neo4j(Graphdb) to be ready
+  #         command: dockerize -wait tcp://localhost:7687 -timeout 1m
+      # - run:
+      #     name: Install code climate test reporter
+      #     command: |
+      #       curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      #       chmod +x ./cc-test-reporter
+      # - run:
+      #     name: Prepare for coverage report
+      #     command:
+      #       ./cc-test-reporter before-build
+      # - run:
+      #     name: Run identity-management test suites
+      #     command:
+      #       yarn test
+      # - run:
+      #     name: Upload test coverage report
+      #     command:
+      #       ./cc-test-reporter after-build -t lcov --exit-code $?
+
+      # - *persist_to_workspace
+
+  #  build_docker:
+  #   <<: *defaults
+  #   steps:
+  #     - *attach_workspace
+  #     - *install_npm_packages
+  #     - run:
+  #         name: Compile TypeScript to JS in dist
+  #         command: yarn ts
+  #     - setup_remote_docker
+  #     - run:
+  #         name: Build the staging docker image
+  #         command: docker build -f docker/release/Dockerfile -t iam-server:0.0.1 .
+  #     - run:
+  #         name: Tag the staging docker image
+  #         command: docker tag iam-server:0.0.1 shopinc/iam-server:0.0.1
+  #     - run:
+  #         name: Log in to hub.docker.com
+  #         command: echo "$DOCKER_PASSWORD" | docker login -u $DOCKER_USERNAME --password-stdin $DOCKER_REGISTRY
+  #     - run:
+  #         name: Push the updated docker image to docker hub
+  #         command: docker push shopinc/iam-server:0.0.1
+  #     - run:
+  #         name: Logout of docker hub
+  #         command: docker logout $DOCKER_REGISTRY
+  #     - *persist_to_workspace
+
+  # deploy:
+  #   <<: *defaults
+  #   steps:
+  #     - checkout
+  #     - *attach_workspace
+  #     - run:
+  #         name: Install gcloud SDK
+  #         command: |
+  #           # Add the Cloud SDK distribution URI as a package source
+  #           echo "deb http://packages.cloud.google.com/apt cloud-sdk-jessie main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+  #           # Import the Google Cloud Platform public key
+  #           curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  #           # Update the package list and install the Cloud SDK
+  #           sudo apt-get update && sudo apt-get install kubectl google-cloud-sdk
+  #     - run:
+  #         name: Activate gcloud
+  #         command: |
+  #           # setup kubectl auth
+  #           echo $GCLOUD_SERVICE_KEY | base64 --decode > $SERVICE_KEY_PATH
+  #           gcloud auth activate-service-account --key-file $SERVICE_KEY_PATH
+  #           gcloud --quiet config set project $PROJECT_ID
+  #           gcloud --quiet config set compute/zone $COMPUTE_ZONE
+  #           gcloud --quiet container clusters get-credentials $CLUSTER_NAME
+  #     - run:
+  #         name: Prepare graphdb secrets
+  #         command: |
+  #           echo $GRAPH_DB_SECRETS | base64 --decode > $GRAPH_DB_SECRETS_PATH
+  #           cd k8s/graphdb && cat secrets.yml
+  #     - run:
+  #         name: Prepare iam-server secrets
+  #         command: |
+  #           echo $IAM_SERVER_SECRETS | base64 --decode > $IAM_SERVER_SECRETS_PATH
+  #           cd k8s/iam-server && cat secrets.yml
+  #     - run:
+  #         name: Run k8s
+  #         command: kubectl apply -f k8s/ -R
+  deploy:
     <<: *defaults
     steps:
       - *attach_workspace
-      - *install_npm_packages
       - run:
-          name: Run identity-management lint test
-          command: yarn lint
-      - run:
-          name: install dockerize
-          command: wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && sudo tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
-          environment:
-            DOCKERIZE_VERSION: v0.6.1
-      - run:
-          name: Wait for neo4j(Graphdb) to be ready
-          command: dockerize -wait tcp://localhost:7687 -timeout 1m
-      - run:
-          name: Install code climate test reporter
+          name: Install and setup K8s deployment requirements
           command: |
-            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-            chmod +x ./cc-test-reporter
+            chmod +x .circleci/gcloud_auth.sh
+            .circleci/gcloud_auth.sh main
       - run:
-          name: Prepare for coverage report
-          command:
-            ./cc-test-reporter before-build
+          name: Prepare graphdb secrets
+          command: |
+            chmod +x .circleci/graphdb_secrets.sh
+            .circleci/graphdb_secrets.sh main
       - run:
-          name: Run identity-management test suites
-          command:
-            yarn test
+          name: Prepare iam-server secrets
+          command: |
+            chmod +x .circleci/iamserver_secrets.sh
+            .circleci/iamserver_secrets.sh main
       - run:
-          name: Upload test coverage report
-          command:
-            ./cc-test-reporter after-build -t lcov --exit-code $?
-
-      - *persist_to_workspace
+          name: Compile TypeScript to JS in dist
+          command: yarn ts
+      - setup_remote_docker
+      - run:
+          name: Build and deploy identity-management
+          command: |
+            chmod +x .circleci/build_deploy.sh
+            .circleci/build_deploy.sh main
 
 workflows:
   version: 2
   test_build_deploy:
     jobs:
       - checkout_code
-      - test_and_report:
+      # - test_and_report:
+      #     requires:
+      #       - checkout_code
+      # - build_docker:
+      #     requires:
+      #       - checkout_code
+      #     <<: *filters
+      - deploy:
           requires:
             - checkout_code
